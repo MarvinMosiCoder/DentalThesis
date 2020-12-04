@@ -16,6 +16,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="css/dashboard.css" rel="stylesheet">
 
     <!-- Icons -->
     <link href="../fontawesome/font-awesome.min.css" rel="stylesheet">
