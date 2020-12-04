@@ -81,8 +81,7 @@
       </div>
     </nav>
 
-    </div>
-    </div>
+  
         
         <!-- End Sidebar -->
 

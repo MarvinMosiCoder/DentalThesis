@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="../bootstrap-4.5.3/dist/css/bootstrap.min.css">
     <script src="../bootstrap-4.5.3/popper.js/dist/popper.min.js"></script> 
     <script src="../bootstrap-4.5.3/dist/js/bootstrap.min.js"></script>
-    <script src="css/dashboard.js"></script></body>
+    <script src="css/dashboard.js"></script>
 </body> 
-
 </html>
