@@ -9,15 +9,23 @@
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="#">
+            <a class="nav-link active" href="dashboard.php">
               <span data-feather="home"></span>
               Dashboard <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="appointment.php">
               <span data-feather="file"></span>
              Appointment
+            </a>
+          </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="eye"></span>
+              View Schedule
             </a>
           </li>
          
@@ -61,6 +69,25 @@
               Year-end sale
             </a>
           </li>
+          <li class="nav-item">
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="nav-link dropdown-toggle">
+                <span data-feather="settings"></span>
+                settings</a>
+                
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="update_user.php">Update Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="update_password.php">Change Password</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./logout.php">
+                    <span data-feather="log-out"></span>Sign out</a>
+                    </li>
+                </ul>
+            </li>
+
         </ul>
       </div>
     </nav>

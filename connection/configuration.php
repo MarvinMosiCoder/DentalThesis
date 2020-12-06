@@ -21,9 +21,9 @@ $conn = mysqli_connect('localhost' , 'root' , '', 'dms');
   //if the register button is clicked
   if (isset($_POST['register'])) {
       $username =mysqli_real_escape_string  ($conn,$_POST ['username']);
-			$fname =mysqli_real_escape_string($conn,$_POST ['fname']);
-			$mname =mysqli_real_escape_string($conn,$_POST ['mname']);
-			$lname =mysqli_real_escape_string($conn,$_POST ['lname']);
+		$fname =mysqli_real_escape_string($conn,$_POST ['fname']);
+		$mname =mysqli_real_escape_string($conn,$_POST ['mname']);
+		$lname =mysqli_real_escape_string($conn,$_POST ['lname']);
       $contact =mysqli_real_escape_string($conn,$_POST ['contact']);
       $email =mysqli_real_escape_string($conn,$_POST ['email']);
   	  $password_1 = mysqli_real_escape_string($conn,$_POST['password_1']);

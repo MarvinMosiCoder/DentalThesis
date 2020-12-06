@@ -1,16 +1,13 @@
 
-<?php include('../includes/user_sidebar.php'); ?>
+<?php include('includes/user_sidebar.php'); ?>
 
 <!-- Main  Warpper -->
-<main class="main-wrapper">
+<main role="main" class="col-md-12">
 <?php $query= mysqli_query($conn,"select * from user where id = '$login_user_id'")or die(mysqli_error());
                $row = mysqli_fetch_array($query);     
                ?>
               
-               <h4 class="text-white"> <strong style="color: #00FF7F"> </strong></h4></span>
-            <!-- Site Header -->
-            <?php include('../includes/user_site_header.php'); ?>   
-            <!-- End Site Header -->
+           
 
             <!-- start of main dashboard -->
 
@@ -19,11 +16,10 @@
           <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-8 col-xl-6">
               <div class="row">
-              <form class="form-auth-small" action="action/save_appointment.php" method="post">
+              <form class="form-auth-small" action="action/save_appoinment.php" method="post">
                 <div class="col text-center">
                   <h1>add appointment</h1>
-                  <!--display validation errors here -->
-                <?php include('errors.php')  ?>
+                
                   <p class="text-h3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                 </div>
               </div>
@@ -35,7 +31,7 @@
                   <input type="text" name="treatment_type" class="form-control" placeholder="type of treatment">
                 </div>
                 <div class="col">
-                  <input type="date" name="data_of_appointment" class="form-control" placeholder="Lastname">
+                  <input type="date" name="date_of_appointment" class="form-control" placeholder="Lastname">
                 </div>
               </div>
               <div class="row align-items-center mt-4">
@@ -56,6 +52,7 @@
             <!-- end of main dashboard -->
         </main>
         <!-- End Main Wrapper -->
+       
 
 
 <?php include('../includes/script.php'); ?>
