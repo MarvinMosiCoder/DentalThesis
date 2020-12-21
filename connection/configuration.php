@@ -24,10 +24,10 @@ $conn = mysqli_connect('localhost' , 'root' , '', 'dms');
 		$fname =mysqli_real_escape_string($conn,$_POST ['fname']);
 		$mname =mysqli_real_escape_string($conn,$_POST ['mname']);
 		$lname =mysqli_real_escape_string($conn,$_POST ['lname']);
-      $contact =mysqli_real_escape_string($conn,$_POST ['contact']);
-      $email =mysqli_real_escape_string($conn,$_POST ['email']);
-  	  $password_1 = mysqli_real_escape_string($conn,$_POST['password_1']);
-  	  $password_2 = mysqli_real_escape_string($conn,$_POST['password_2']);
+		$contact =mysqli_real_escape_string($conn,$_POST ['contact']);
+		$email =mysqli_real_escape_string($conn,$_POST ['email']);
+		$password_1 = mysqli_real_escape_string($conn,$_POST['password_1']);
+		$password_2 = mysqli_real_escape_string($conn,$_POST['password_2']);
 
       //Check if there are duplicate data
       $check = mysqli_query($conn, "SELECT * FROM user where  username = '$username' AND email = '$email'");
@@ -63,7 +63,7 @@ $conn = mysqli_connect('localhost' , 'root' , '', 'dms');
   	 //if there are no errors, save to database
   	 if (count($errors) == 0) {
   	 	$password = md5($password_1); //encrypt password before storing in database(security)
-  	 	$sql = "INSERT IGNORE INTO user(id, fname, mname, lname, contact, email, username, password) VALUES ('$id', '$fname',  '$mname', '$lname', '$contact','$email','$username','$password')";
+  	 	$sql = "INSERT IGNORE INTO user(id, fname, mname, lname, contact, email, username, password, status) VALUES ('$id', '$fname',  '$mname', '$lname', '$contact','$email','$username','$password', 1)";
   	 	mysqli_query($conn,$sql);
     	echo "<script type=\"text/javascript\">". "alert('Save Success');". "</script>";
   	 }
@@ -96,7 +96,7 @@ $conn = mysqli_connect('localhost' , 'root' , '', 'dms');
                 //storing history login
                 $sql = "INSERT INTO history_log(username)VALUES('$username')";
                 $query_sql = mysqli_query($conn, $sql);
-                header('location:dashboard.php'); // Redirecting To Other Page
+                header('location:update_user.php'); // Redirecting To Other Page
                 
   	        	} else {
   	        		array_push($errors, "<p class = 'alert alert-danger'>Incorrect Username and Password</p>");

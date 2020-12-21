@@ -71,7 +71,7 @@
         $mname = $_POST['mname'];
         $lname = $_POST['lname'];
         $gender = $_POST['gender'];
-        $date_of_birth = date('y-m-d');
+        $date_of_birth = date('Y-m-d', strtotime($_POST['date_of_birth']));
         $address = $_POST['address'];
         $contact = $_POST['contact'];
       $query = "UPDATE user SET fname = '$fname', mname = '$mname', lname = '$lname',
@@ -81,7 +81,7 @@
                     ?>
                      <script type="text/javascript">
             alert("Update Successfull.");
-            window.location = "update_user.php";
+            window.location = "dashboard.php";
         </script>
         <?php
              }               

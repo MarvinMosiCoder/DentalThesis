@@ -8,6 +8,8 @@
                ?>   
                
               
-               <h4 class="text-white text-center">Welcome! <strong style="color: #00FF7F"> <?php echo $login_user;?></strong></h4>
+    <li class="nav-item text-nowrap">
+    <h4 class="text-white text-center">Welcome! <strong style="color: #00FF7F"> <?php echo $login_user;?></strong></h4>
+    </li>
  
 </nav>

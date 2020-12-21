@@ -8,10 +8,10 @@
                ?>   
                
               
-               <h4 class="text-white text-center">Welcome! <strong style="color: #00FF7F"> <?php echo $login_admin;?></strong></h4>
+               
   <ul class="navbar-nav px-3">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="./logout.php">Sign out</a>
+    <h4 class="text-white text-center">Welcome! <strong style="color: #00FF7F"> <?php echo $login_admin;?></strong></h4>
     </li>
   </ul>
 </nav>

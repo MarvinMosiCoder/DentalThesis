@@ -23,7 +23,7 @@
 
           
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="view_sched.php">
               <span data-feather="eye"></span>
               View Schedule
             </a>

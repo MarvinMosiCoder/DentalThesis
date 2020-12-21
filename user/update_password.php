@@ -16,7 +16,7 @@
       <div class="container d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
       <div class="card">
         <div class="card-body">
-        <div class="card-title"><h1>User Profile</h1></div>
+        <div class="card-title"><h1>Change Password</h1></div>
 <div class="profile-input-field">
         <h3>Please Fill-out All Fields</h3>
         <form method="post" action="#" >
